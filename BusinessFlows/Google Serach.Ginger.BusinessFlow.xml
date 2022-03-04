@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="7c88be4c-c961-4a13-8d66-5d2f3033429a" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020623" GingerVersion="4.1.0.0" Version="11" LastUpdateBy="beniwal" LastUpdate="202203041058" />
+<GingerRepositoryItem><Header ItemGuid="7c88be4c-c961-4a13-8d66-5d2f3033429a" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020623" GingerVersion="4.1.0.0" Version="14" LastUpdateBy="beniwal" LastUpdate="202203041112" />
 <BusinessFlow Description="This is for Testing gogole search" Elapsed="23110" Guid="7c88be4c-c961-4a13-8d66-5d2f3033429a" Name="Google Search" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Open Browser" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="5d62fbff-ab7b-4193-bc69-71b5d3b9f4c3" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
@@ -15,6 +15,12 @@
 <ActInputValue Guid="cd8fe970-fa11-4809-b138-b70a6c78a856" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActBrowserElement>
+<ActUIElement Active="True" Description="UIElement Action" Guid="dfffca34-4e6c-4934-8fab-f4e83ca06c3a" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="493794be-3446-4ec4-a930-f9b49e5bea5e" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+<ActInputValue Guid="842c0f55-8864-466d-aed0-274ff2ac867c" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Unknown" />
+</InputValues>
+</ActUIElement>
 <ActBrowserElement Active="True" Description="Browser Action" Guid="9063fe52-923c-42b4-9ef7-c5397ad45f87" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
 <ActInputValue Guid="72b44719-8e41-490d-ae8f-18cfaaed0b99" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CloseAll" />
@@ -28,12 +34,14 @@
 </ActBrowserElement>
 </Acts>
 </Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="New Activity" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="5be4b805-6c18-43b5-b7e4-1342390ed5ac" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="MyWebApp" />
 </Activities>
 
 <ActivitiesGroups>
 <ActivitiesGroup Guid="7720fc58-9d10-4cb2-aadc-3d66d73ff5f4" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5d62fbff-ab7b-4193-bc69-71b5d3b9f4c3" ActivityName="Open Browser" Guid="fad6d25e-3586-4de1-915a-f2774304bcb0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5d62fbff-ab7b-4193-bc69-71b5d3b9f4c3" ActivityName="Open Browser" Guid="8c1ffb68-dfad-4fc6-9f49-d05a3db6d7a2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5be4b805-6c18-43b5-b7e4-1342390ed5ac" ActivityName="New Activity" Guid="cb9ec054-ce41-4420-bb56-4a6f8c964021" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
