@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="a7a96ed6-462d-43a3-b11a-ddc564ff9b5c" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203021446" GingerVersion="4.1.0.0" Version="4" LastUpdateBy="beniwal" LastUpdate="202203021506" />
+<BusinessFlow Guid="a7a96ed6-462d-43a3-b11a-ddc564ff9b5c" Name="Loop Demo" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="0a1e4d52-33a5-4dc3-a37e-6eca81a09723" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="a5144b69-9b2e-44a4-8b5b-3556d556e841" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="loop_var" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="ea7f4d7e-eea0-4c0f-bf1c-0bfe519c51da" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="c9eab1ec-2efd-45e2-8780-2ab9683c637e" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="loop_var" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" FlowControlAction="MessageBox" Guid="d9f87f27-9a57-4b54-81de-2136a207fd36" Operator="ActionPassed" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="34d6dcf1-e557-459c-b7ec-fa5ac2e86e5b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{loop_var Exp={Var Name=loop_var}+1}" />
+</InputValues>
+</ActSetVariableValue>
+</Acts>
+
+<Variables>
+<VariableNumber Guid="6652eca0-ba91-46c9-a785-b6eb4b5c83bc" InitialNumberValue="0" MappedOutputType="None" MaxValue="2147483647" MinValue="-2147483648" Name="loop_var" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="34a57131-6cb2-4777-90f1-cd1964da1a15" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0a1e4d52-33a5-4dc3-a37e-6eca81a09723" ActivityName="Activity 1" Guid="5b125049-0901-4d2b-8f5c-cc5299eab16c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="9eade98f-f481-4692-a1f4-438018288aa2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

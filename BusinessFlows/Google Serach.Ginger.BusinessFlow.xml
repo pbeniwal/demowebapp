@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="7c88be4c-c961-4a13-8d66-5d2f3033429a" ItemType="BusinessFlow" CreatedBy="beniwal" Created="202203020623" GingerVersion="4.1.0.0" Version="11" LastUpdateBy="beniwal" LastUpdate="202203041058" />
+<BusinessFlow Description="This is for Testing gogole search" Elapsed="23110" Guid="7c88be4c-c961-4a13-8d66-5d2f3033429a" Name="Google Search" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Open Browser" AutomationStatus="Development" ErrorHandlerMappingType="ErrorHandlersMatchingTrigger" Guid="5d62fbff-ab7b-4193-bc69-71b5d3b9f4c3" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebApp">
+<Acts>
+<ActBrowserElement Active="True" Description="Open google" Guid="17194b05-5df0-4f72-9a61-6275b92ba5aa" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="eb3dc8d1-be09-4dd3-87cd-1e3a96056d65" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
+<ActInputValue Guid="d4cbe400-8dd1-4a7b-8910-c421052eb096" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="www.google.com" />
+<ActInputValue Guid="b4bf0e20-37a6-477c-805e-4ead074f40b1" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="16aaca1b-f60c-467e-a353-a318968ce4ff" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="1c30cc67-a750-4230-ab11-8e89102f394f" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="c4e8f171-cfa7-401b-b988-ea0dcafc4a85" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="cd8fe970-fa11-4809-b138-b70a6c78a856" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+<ActBrowserElement Active="True" Description="Browser Action" Guid="9063fe52-923c-42b4-9ef7-c5397ad45f87" ImplicitWait="60" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="72b44719-8e41-490d-ae8f-18cfaaed0b99" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CloseAll" />
+<ActInputValue Guid="b34b9675-8536-4447-ae89-738d17b8c8b5" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="e8f40304-53d2-43af-832d-738c849a31ce" Param="LocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="ad572f55-46b6-4fbc-8ae7-9b3fc0bf725b" Param="GotoURLType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Current" />
+<ActInputValue Guid="c986e3e3-e041-4b83-8dc3-3afe5e3149f9" Param="URLSrc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Static" />
+<ActInputValue Guid="5efdf838-8a38-43a2-92a6-9bd5f3c8bc47" Param="LocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
+<ActInputValue Guid="4ec8c691-b5f2-452f-850f-41913f3c1920" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActBrowserElement>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="7720fc58-9d10-4cb2-aadc-3d66d73ff5f4" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5d62fbff-ab7b-4193-bc69-71b5d3b9f4c3" ActivityName="Open Browser" Guid="fad6d25e-3586-4de1-915a-f2774304bcb0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="MyWebApp" Guid="76d132a2-0a70-46b6-8558-ef27ad2c93ba" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

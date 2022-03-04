@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="ba4f405a-30ad-4f19-afb3-c99f365be35a" ItemType="ProjEnvironment" CreatedBy="beniwal" Created="202203020727" GingerVersion="4.1.0.0" Version="3" LastUpdateBy="beniwal" LastUpdate="202203020839" />
+<ProjEnvironment Guid="ba4f405a-30ad-4f19-afb3-c99f365be35a" Name="env23" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Active="True" Guid="da5dd773-b7b4-4782-880b-401ec0646207" Name="MyWebApp" ParentGuid="00000000-0000-0000-0000-000000000000">
+<GeneralParams>
+<GeneralParam Guid="58744bdf-abdc-48e2-ac4a-35f330a851ac" Name="ENV_URL" ParentGuid="00000000-0000-0000-0000-000000000000" Value="https://google.co.in" />
+</GeneralParams>
+</EnvApplication>
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>
